@@ -1,3 +1,7 @@
+#!/bin/sh
+#设置输出语言
+export LANG=en_US.UTF-8
+
 sudo apt update && sudo apt upgrade 
 sudo apt install docker && sudo apt install docker-compose
 curl -O https://raw.githubusercontent.com/zhucaidan/btpanel-v7.7.0/main/install/install_panel.sh && bash install_panel.sh
