@@ -25,5 +25,12 @@ bt
 Guwei888
 6
 goodway
+11
+y
+echo "begin>>>>>matrix>>>>>开始安装>>>>>>>>>>"
+cd /
+cd /home
+git clone https://xvmvx.github.com/my/matrix.git
+cd /matrix/npm
+docker-compose up -d
 
- 
