@@ -10,6 +10,8 @@ sudo apt update && sudo apt upgrade
 echo "<<<<<<<<<<完成更新<<<<<<<<<<<<<<"
 echo "begin>>>>>安装>>>>>Docker>>>>>>>>>>"
 sudo apt install docker && sudo apt install docker-compose
+sudo systemctl enable --now docker
+sudo chmod +x /usr/local/bin/docker-compose
 echo "<<<<<<<<<<Docker已安装<<<<<<<<<<<<<<"
 echo "begin>>>>>安装>>>>>宝塔面板>>>>>>>>>>"
 wget -O install.sh http://f.cccyun.cc/bt/install_6.0.sh && bash install.sh
@@ -32,5 +34,7 @@ cd /
 cd /home
 git clone https://xvmvx.github.com/my/matrix.git
 cd /matrix/npm
+# 建立一个 docker network
+docker network create matrix
 docker-compose up -d
 
