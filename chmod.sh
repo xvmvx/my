@@ -28,4 +28,5 @@ if [ "$process" = "" ]
    then
       echo "Not found>$project<, running Java program"
 else
-. ./bt.sh
+$ chmod +x bt.sh 
+$ ./bt.sh 
