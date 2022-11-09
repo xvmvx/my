@@ -1,5 +1,4 @@
-
-#!/bin/sh
+#!/bin/bash
 
 #设置输出语言
 export LANG=en_US.UTF-8
